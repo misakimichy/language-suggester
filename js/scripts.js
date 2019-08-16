@@ -54,7 +54,7 @@ $(document).ready(function(){
       $(".result-message").append("<p>You can learn how to make self-driving car!</p>");
     } else {
       // alert("Please select everything to see the result!");
-      $(".modal").modal();
+      $(".modal").modal().fadeIn('fast');
       $(".close").click(function() {
         $(".modal").modal('hide');
       });
