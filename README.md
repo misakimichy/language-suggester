@@ -35,15 +35,15 @@ What my code includes
 
 
 Main page:
-![screenshot of main page]("img/screenshot1.png")
+![screenshot of main page](img/screenshot1.png)
 
 
 Modal screen:
-![screenshot of modal]("img/screenshot2.png")
+![screenshot of modal](img/screenshot2.png)
 
 
 Result page:
-![screenshot of result page]("img/screenshot.png")
+![screenshot of result page](img/screenshot.png)
 
 
 ## Copyright
