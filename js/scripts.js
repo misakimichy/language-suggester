@@ -37,11 +37,11 @@ $(document).ready(function(){
     }
   });
   $("#reset-btn").click(function(){
+    $("input:radio").prop("checked", false);
     $(".result").hide();
     $("#reset-btn").hide();
     $("form").show();
     $("#subtitle").show();
-    //Todo: uncheck radio buttons
   })
 });
 
