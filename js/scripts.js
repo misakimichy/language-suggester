@@ -1,8 +1,11 @@
 $(document).ready(function(){
+  $("#reset-btn").hide();
   $("form").submit(function(event){
     event.preventDefault();
     $("form").hide();
+    $("#subtitle").hide();
     $(".result").show();
+    $("#reset-btn").show();
 
     let city = parseInt($("input[name=city]:checked").val());
     let project = parseInt($("input[name=project]:checked").val());
@@ -33,6 +36,13 @@ $(document).ready(function(){
       $(".result").hide();
     }
   });
+  $("#reset-btn").click(function(){
+    $(".result").hide();
+    $("#reset-btn").hide();
+    $("form").show();
+    $("#subtitle").show();
+    //Todo: uncheck radio buttons
+  })
 });
 
 
