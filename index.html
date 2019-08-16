@@ -17,91 +17,94 @@
         <div class="card">
             <form>
                 <div class="well">
-                    <label for="city1">Q1: Which city do you prefer to live?</label>
-                    <div class="row">
-                        <div class="col-md-6 column">
-                            <img src="img/seattle.jpg" alt="Image of Seattle">
+                    <p>Q1: Which city do you prefer to live?</p>
+                        <div class="row">
+                            <div class="col-md-6 column">
+                                <img id="seattle" src="img/seattle.jpg" alt="Image of Seattle">
+                                <label for="city1">
+                                    <input id="city1" type="radio" value="1" name="city">Seattle WA
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/san-francisco.jpg" alt="Image of San Francisco">
+                                <label for="city2"><input id="city2" type="radio" value="2" name="city">San Francisco CA</label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/san-francisco.jpg" alt="Image of San Francisco">
-                        </div>
-                    </div>
-                    <div>
-                        <input type="radio" value="1" >Seattle WA
-                    </div>
-                    <div>
-                        <input type="radio" value="2" >San Francisco CA
-                    </div>
+                    </label>
                 </div>
                 <div class="well">
-                    <label for="city1">Q2: Which type of project does excite you to work with? </label>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/mobile.jpg" alt="Image of mobile apps">
+                    <p>Q2: Which type of project does excite you to work with?</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/mobile.jpg" alt="Image of mobile apps">
+                                <label for="project1">
+                                    <input id="project1" type="radio" value="1" name="project">Apps
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/self-driving.jpg" alt="Image of self-driving car">
+                                <label for="project2">
+                                    <input id="project2" type="radio" value="2" name="project">Self-driving Car
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/self-driving.jpg" alt="Image of self-driving car">
-                        </div>
-                    </div>
-                    <div>
-                        <input type="radio" value="1" >Apps
-                    </div>
-                    <div>
-                        <input type="radio" value="2" >Self-driving Car
-                    </div>
+                    </label>
                 </div>
                 <div class="well">
-                    <label for="city1">Q3: I am a</label>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/dog.jpg" alt="Image of dogs">
+                    <p>Q3: I am a</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/dog.jpg" alt="Image of dogs">
+                                <label for="city1">
+                                    <input id="dog1" type="radio" value="1" name="dog">Dog person!
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/cat.jpg" alt="Image of cats">
+                                <label for="dog2">
+                                    <input id="dog2" type="radio" value="2" name="dog">Cat person!
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/cat.jpg" alt="Image of cats">
-                        </div>
-                    </div>
-                    <div>
-                        <input type="radio" value="1">Dog person!
-                    </div>
-                    <div>
-                        <input type="radio" value="2">Cat person!
-                    </div>
+                    </label>
                 </div>
                 <div class="well">
-                    <label for="city1">Q4: Which environment do you prefer?</label>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/nature.jpg" alt="Image of nature">
+                    <p>Q4: Which environment do you prefer?</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img id="nature" src="img/nature.jpg" alt="Image of nature">
+                                <label for="environment1">
+                                    <input id="environment1" type="radio" value="1" name="environment">Stay calm in the nature
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/party.jpg" alt="Image of party">
+                                <label for="environment2">
+                                    <input id="environment2" type="radio" value="2" name="environment">Party hard
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/party.jpg" alt="Image of party">
-                        </div>
-                    </div>
-                    <div>
-                        <input type="radio" value="1">Stay calm in the nature.
-                    </div>
-                    <div>
-                        <input type="radio" value="2">Party hard.
-                    </div>
+                    </label>
                 </div>
                 <div class="well">
-                    <label for="city1">Q5: Which size of company do you prefer?</label>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/startup.jpg" alt="Image of startup">
+                    <p>Q5: Which size of company do you prefer?</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/startup.jpg" alt="Image of startup">
+                                <label for="size1">
+                                    <input id="size1" type="radio" value="1" name="size">Small like early stage startups
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/established.jpeg" alt="Image of established company">
+                                <label for="size2">
+                                    <input id="size2" type="radio" value="2" name="size">Big! Bigger is better!
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/established.jpeg" alt="Image of established company">
-                        </div>  
-                    </div>
-                    <div>
-                        <input type="radio" value="1">Small like early stage startups
-                    </div>
-                    <div>
-                        <input type="radio" value="2">Big! Bigger is better!
-                    </div>
+                    </label>
                 </div>
-                <button class="btn btn-primary" type="submit">See the Result!</button>
+                <button class="btn btn-info" type="submit">See the Result!</button>
             </form>
         </div>
     </div>
