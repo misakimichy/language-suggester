@@ -1,17 +1,29 @@
+const resetMainPage = () => {
+  $("form").show();
+  $("#subtitle").show();
+  $("#reset-btn").hide();
+  $(".result").hide();
+}
+
+const showResultPage = () => {
+  $("form").hide();
+  $("#subtitle").hide();
+  $("#reset-btn").show();
+  $(".result").show();
+}
+
 $(document).ready(function(){
   $("#reset-btn").hide();
   $("form").submit(function(event){
     event.preventDefault();
-    $("form").hide();
-    $("#subtitle").hide();
-    $(".result").show();
-    $("#reset-btn").show();
+    showResultPage();
 
     let city = parseInt($("input[name=city]:checked").val());
     let project = parseInt($("input[name=project]:checked").val());
     let dogOrCat = parseInt($("input[name=dog-or-cat]:checked").val());
     let environment= parseInt($("input[name=environment]:checked").val());
     let size = parseInt($("input[name=size]:checked").val());
+    
     if (city + project + dogOrCat + environment + size === 5) {
       $("#your-language").text("C#");
       $("#language-logo").prepend('<img src="img/c-sharp.png" alt="C# logo" class="logos">')
@@ -32,16 +44,12 @@ $(document).ready(function(){
       $("#language-logo").prepend('<img src="img/python.png" alt="Python logo" class="logos">')
     } else {
       alert("Please select everything to see the result!");
-      $("form").show();
-      $(".result").hide();
+      resetMainPage();
     }
   });
   $("#reset-btn").click(function(){
     $("input:radio").prop("checked", false);
-    $(".result").hide();
-    $("#reset-btn").hide();
-    $("form").show();
-    $("#subtitle").show();
+    resetMainPage();
   })
 });
 
