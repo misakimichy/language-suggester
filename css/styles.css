@@ -39,6 +39,10 @@ input[type=radio] {
   vertical-align: text-top;
 }
 
+#name {
+  width: 50%;
+}
+
 .btn {
   font-size: 1em;
   width: 10em;
@@ -47,7 +51,11 @@ input[type=radio] {
   margin: 0 auto;
 }
 
-/* alert message */
+/* alert modal */
+.modal {
+  margin-top: 50%;
+}
+
 .modal-body > p {
   margin-top: 10px;
   text-align: center;
