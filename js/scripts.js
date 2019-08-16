@@ -11,16 +11,22 @@ $(document).ready(function(){
     let size = parseInt($("input[name=size]:checked").val());
     if (city + project + dogOrCat + environment + size === 5) {
       $("#your-language").text("C#");
+      $("#language-logo").prepend('<img src="img/c-sharp.png" alt="C# logo" class="logos">')
     } else if (city + project + dogOrCat + environment + size === 6) {
       $("#your-language").text("Ruby");
+      $("#language-logo").prepend('<img src="img/ruby.png" alt="Ruby logo" class="logos">')
     } else if (city + project + dogOrCat + environment + size === 7) {
       $("#your-language").text("JavaScript");
+      $("#language-logo").prepend('<img src="img/javascript.jpg" alt="JavaScript logo" class="logos">')
     } else if (city + project + dogOrCat + environment + size === 8) {
       $("#your-language").text("Swift");
+      $("#language-logo").prepend('<img src="img/swift.png" alt="Swift logo" class="logos">')
     } else if (city + project + dogOrCat + environment + size === 9) {
       $("#your-language").text("Go");
+      $("#language-logo").prepend('<img src="img/golang.png" alt="Golang logo" class="logos">');
     } else if (city + project + dogOrCat + environment + size === 10) {
       $("#your-language").text("Python");
+      $("#language-logo").prepend('<img src="img/python.png" alt="Python logo" class="logos">')
     } else {
       alert("Please select everything to see the result!");
       $("form").show();

@@ -54,6 +54,12 @@ button {
   margin-top: 20px;
 }
 
+.logos {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 footer {
   margin-top: 50px;
 }
