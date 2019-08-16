@@ -104,12 +104,15 @@
                     </div>
                 </label>
             </div>
+            <div class="form-group">
+                <label for="name">Q6: What's your nickname?</label>
+                <input id="name" class="form-control" type="text">
+            </div>
             <button class="btn btn-info" type="submit">See the Result!</button>
         </form>
         <div class="well result">
-            <h2>The programming language that suits you the best is</h2>
-            <div id="language-logo">
-                <h1 id="your-language"></h1>
+            <h2><span class="name"></span>, you ought to study <span id="your-language"></span></h2>
+            <div class="result-message">
             </div>
         </div>
         <button id="reset-btn" class="btn btn-info" type="reset">Back to the Main</button>

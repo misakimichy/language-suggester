@@ -57,6 +57,10 @@ input[type=radio] {
   margin: 0 auto;
 }
 
+.result-message > p {
+  text-align: center;
+}
+
 footer {
   margin-top: 50px;
 }
