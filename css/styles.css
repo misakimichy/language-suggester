@@ -51,6 +51,7 @@ button {
 
 .result {
   display: none;
+  margin-top: 20px;
 }
 
 footer {
