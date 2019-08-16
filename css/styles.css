@@ -17,6 +17,7 @@ img {
   margin: 10px 0;
 }
 
+/* main */
 #seattle {
   height: 334px;
 }
@@ -46,6 +47,14 @@ input[type=radio] {
   margin: 0 auto;
 }
 
+/* alert message */
+.modal-body > p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* result */
+
 .result {
   display: none;
   margin-top: 20px;
@@ -61,6 +70,7 @@ input[type=radio] {
   text-align: center;
 }
 
+/* footer */
 footer {
   margin-top: 50px;
 }

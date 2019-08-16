@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Programming Language Suggester</title>
 </head>
@@ -110,6 +111,21 @@
             </div>
             <button class="btn btn-info" type="submit">See the Result!</button>
         </form>
+        <!-- alert popup -->
+        <div class="modal fade" role="dialog">
+            <div class="modal-dialog" role="dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Please select everything to see the result!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- result page -->
         <div class="well result">
             <h2><span class="name"></span>, you ought to study <span id="your-language"></span></h2>
             <div class="result-message">

@@ -53,7 +53,11 @@ $(document).ready(function(){
       $(".result-message").prepend('<img src="img/python.png" alt="Python logo" class="logos">');
       $(".result-message").append("<p>You can learn how to make self-driving car!</p>");
     } else {
-      alert("Please select everything to see the result!");
+      // alert("Please select everything to see the result!");
+      $(".modal").modal();
+      $(".close").click(function() {
+        $(".modal").modal('hide');
+      });
       resetMainPage();
     }
   });
