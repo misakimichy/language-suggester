@@ -46,7 +46,7 @@ Modal screen:
 
 Result page:
 
-![screenshot of result page](img/screenshot.png)
+![screenshot of result page](img/screenshot3.png)
 
 
 ## Copyright
