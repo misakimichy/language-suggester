@@ -34,7 +34,16 @@ What my code includes
 - Project demonstrates understanding of concepts covered this week. If prompted, you are able to discuss your code with an instructor using correct terminology.
 
 
-## Link
+Main page:
+![screenshot of main page]("img/screenshot1.png")
+
+
+Modal screen:
+![screenshot of modal]("img/screenshot2.png")
+
+
+Result page:
+![screenshot of result page]("img/screenshot.png")
 
 
 ## Copyright
