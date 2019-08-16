@@ -38,15 +38,12 @@ input[type=radio] {
   vertical-align: text-top;
 }
 
-button {
-  width: 20%;
-  height: 50px;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
 .btn {
-  font-size: 20px;
+  font-size: 1em;
+  width: 10em;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
 .result {
