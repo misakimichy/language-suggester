@@ -28,38 +28,45 @@ $(document).ready(function(){
 
     showResultPage(name);
     
-    if (city + project + dogOrCat + environment + size === 5) {
-      $("#your-language").text("C#");
-      $(".result-message").prepend('<img src="img/c-sharp.png" alt="C# logo" class="logos">');
-      $(".result-message").append("<p>You can learn how to make games and VR!</p>");
-    } else if (city + project + dogOrCat + environment + size === 6) {
-      $("#your-language").text("Ruby");
-      $(".result-message").prepend('<img src="img/ruby.png" alt="Ruby logo" class="logos">');
-      $(".result-message").append("<p>You can learn how to make applications!</p>");
-    } else if (city + project + dogOrCat + environment + size === 7) {
-      $("#your-language").text("JavaScript");
-      $(".result-message").prepend('<img src="img/javascript.jpg" alt="JavaScript logo" class="logos">');
-      $(".result-message").append("<p>You can learn how to make cool web applications and games!</p>");
-    } else if (city + project + dogOrCat + environment + size === 8) {
-      $("#your-language").text("Swift");
-      $(".result-message").prepend('<img src="img/swift.png" alt="Swift logo" class="logos">');
-      $(".result-message").append("<p>You can learn how to make applications for MacOS, iOS, watchOS and tvOS!</p>");
-    } else if (city + project + dogOrCat + environment + size === 9) {
-      $("#your-language").text("Go");
-      $(".result-message").prepend('<img src="img/golang.png" alt="Golang logo" class="logos">');
-      $(".result-message").append("<p>You can learn efficient, fast then beautiful and straight codes!</p>");
-    } else if (city + project + dogOrCat + environment + size === 10) {
-      $("#your-language").text("Python");
-      $(".result-message").prepend('<img src="img/python.png" alt="Python logo" class="logos">');
-      $(".result-message").append("<p>You can learn how to make self-driving car!</p>");
+    // Prepare results for when the form submits
+    // Default will assume result === 5, aka C#
+    let language = "C#";
+    let prependImage = '<img src="img/c-sharp.png" alt="C# logo" class="logos">';
+    let appendMessage = "<p>You can learn how to make games and VR!</p>";
+    let results = city + project + dogOrCat + environment + size;
+
+    if (results === 6) {
+      language = "Ruby";
+      prependImage = '<img src="img/ruby.png" alt="Ruby logo" class="logos">';
+      appendMessage = "<p>You can learn how to make applications!</p>";
+    } else if (results === 7) {
+      language = 'JavaScript';
+      prependImage = '<img src="img/javascript.jpg" alt="JavaScript logo" class="logos">'
+      appendMessage = "<p>You can learn how to make cool web applications and games!</p>"
+    } else if (results === 8) {
+      language = "Swift";
+      prependImage = '<img src="img/swift.png" alt="Swift logo" class="logos">';
+      appendMessage = "<p>You can learn how to make applications for MacOS, iOS, watchOS and tvOS!</p>";
+    } else if (results === 9) {
+      language = "Go";
+      prependImage = '<img src="img/golang.png" alt="Golang logo" class="logos">';
+      appendMessage = "<p>You can learn efficient, fast then beautiful and straight codes!</p>";
+    } else if (results === 10) {
+      language = "Python";
+      prependImage = '<img src="img/python.png" alt="Python logo" class="logos">';
+      appendMessage = "<p>You can learn how to make self-driving car!</p>";
     } else {
       // alert("Please select everything to see the result!");
       $(".modal").modal().fadeIn('fast');
       $(".close").click(function() {
-        $(".modal").modal('hide');
+      $(".modal").modal('hide');
       });
       resetMainPage();
     }
+      // Update the page with
+      $("#your-language").text(language);
+      $(".result-message").prepend(prependImage).append(appendMessage);
+      return
   });
   $("#reset-btn").click(function(){
     $("input:radio").prop("checked", false);
