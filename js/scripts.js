@@ -38,37 +38,37 @@ $(document).ready(function(){
         "C#",
         '<img src="img/c-sharp.png" alt="C# logo" class="logos">',
         "<p>You can learn how to make games and VR!</p>",
-      );
+      )
     } else if (results === 6) {
       update(
         "Ruby",
         '<img src="img/ruby.png" alt="Ruby logo" class="logos">',
         "<p>You can learn how to make applications!</p>",
-      );
+      )
     } else if (results === 7) {
       update(
         'JavaScript',
         '<img src="img/javascript.jpg" alt="JavaScript logo" class="logos">',
         "<p>You can learn how to make cool web applications and games!</p>",
-      );
+      )
     } else if (results === 8) {
       update(
         "Swift",
         '<img src="img/swift.png" alt="Swift logo" class="logos">',
         "<p>You can learn how to make applications for MacOS, iOS, watchOS and tvOS!</p>",
-      );
+      )
     } else if (results === 9) {
       update(
         "Go",
         '<img src="img/golang.png" alt="Golang logo" class="logos">',
         "<p>You can learn efficient, fast then beautiful and straight codes!</p>",
-      );
+      )
     } else if (results === 10) {
       update(
         "Python",
         '<img src="img/python.png" alt="Python logo" class="logos">',
         "<p>You can learn how to make self-driving car!</p>",
-      );
+      )
     } else {
       $(".modal").modal().fadeIn('fast');
       $(".close").click(function() {
@@ -81,7 +81,7 @@ $(document).ready(function(){
   $("#reset-btn").click(function(){
     $("input:radio").prop("checked", false);
     resetMainPage();
-    // $('form').trigger('reset');
+    $('form').trigger('reset');
   })
 });
 
