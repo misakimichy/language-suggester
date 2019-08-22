@@ -1,3 +1,4 @@
+// Show form and subtitle, hide the rest button and result section, and clear out the form
 const resetMainPage = () => {
   $(".result-message").empty();
   $("form").show();
@@ -6,6 +7,8 @@ const resetMainPage = () => {
   $(".result").hide();
 }
 
+// Show the reset button and result section, hide the form and subtitle,
+// and insert the user input (nickname) to the span.name
 const showResultPage = name => {
   $("form").hide();
   $("#subtitle").hide();
@@ -28,6 +31,7 @@ $(document).ready(function(){
 
     showResultPage(name);
 
+    // Function to update best language for user and images to prepend and message to append to div.result-message
     const update = (language, prependImage, appendMessage) => {
       $("#your-language").text(language);
       $(".result-message").prepend(prependImage).append(appendMessage);
@@ -87,7 +91,7 @@ $(document).ready(function(){
 
 
 /*
-Show result depends on the number checked of radio button, value = 1 or 2
+Branching:
 
 Result: value
 C#: 5
